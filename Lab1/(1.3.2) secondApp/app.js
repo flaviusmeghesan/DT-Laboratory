@@ -12,7 +12,7 @@ document.getElementById("n").addEventListener('input',inputSum );
 			sum+=i;
 		}
 		return sum;	
-	  } else if (typeof n === 'string') {
+	  } else if (typeof n === 'string' || typeof n === 'boolean') {
 		return "not a number";
 	  }
 	if (typeof n === 'undefined') return "n is undefined ";

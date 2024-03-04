@@ -3,6 +3,7 @@ function test(){
  console.log(sum(2)==3?"Passed":"Failed");
  console.log(sum(4)==10?"Passed":"Failed");
  console.log(sum()=="n is undefined"?"Passed":"Failed");
+
  }
  test ();
  
@@ -15,4 +16,9 @@ function test(){
  
  console.log("reapelare test");
  test ();
- 
+ console.log("test nou");
+function test2(){
+    console.log(sum("da")=="not a number"?"Passed": "Failed");
+    console.log(sum(true)=="not a number"?"Passed":"Failed");
+ }
+ test2();
