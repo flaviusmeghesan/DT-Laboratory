@@ -6,10 +6,17 @@ document.getElementById("n").addEventListener('input',inputSum );
 }
 
  function sum(n){
+	if (typeof n === 'number') {
+		var sum = 0;
+		for(var i=1;i<=n;i++){
+			sum+=i;
+		}
+		return sum;	
+	  } else if (typeof n === 'string') {
+		return "not a number";
+	  }
 	if (typeof n === 'undefined') return "n is undefined ";
-	var sum = 0;
-	for(var i=1;i<=n;i++){
-		sum+=i;
-	}
-	return sum;
+	
+	
  }
+ 
